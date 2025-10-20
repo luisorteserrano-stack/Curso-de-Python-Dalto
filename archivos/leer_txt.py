@@ -1,18 +1,21 @@
+# Usando open para abrir un archivo con una codificación universal (UTF-9)
 archivo_sin_leer = open("archivos/texto_de_dalto.txt", encoding="utf-8")
 
 # Lee archivo completo
 # archivo = archivo_sin_leer.read()
-# print(archivo
+# print(archivo)
 
 # Lee línea por línea
 # lineas = archivo_sin_leer.readlines()
 # print(lineas)
-    # Prueba
-# Leer una sola línea (Consume mucha memoria)
-linea_1 = archivo_sin_leer.readline()
 
-# Prueba 2
+# Leer una sola línea (Consume mucha memoria)
+# linea_1 = archivo_sin_leer.readline()
+# print(linea_1)
+
+# Leer el archivo
+archivo = archivo_sin_leer.read()
 # Cerrar el archivo
 archivo_sin_leer.close()
-
-print(linea_1)
+# Obtenemos eo resultado por pantalla
+print(archivo)
